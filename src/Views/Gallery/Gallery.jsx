@@ -104,7 +104,7 @@ const GalleryTitle = styled(Typography)`
 
 const Gallery = () => {
   return (
-    <GalleryContainer>
+    <GalleryContainer style={{marginTop:200, marginBottom: 100}}>
       <GalleryTitle variant="h4" component="h2" style={{color: "white"}}>
         Our Gallery
       </GalleryTitle>

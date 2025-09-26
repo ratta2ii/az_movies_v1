@@ -11,7 +11,8 @@ const useStyles = makeStyles((theme) => ({
         color: "#fff",
         maxWidth: 935,
         margin: "auto",
-        marginTop: theme.spacing(10),
+        marginTop: 200,
+        marginBottom: 50,
         [theme.breakpoints.down("sm")]: {
             padding: theme.spacing(2),
         },

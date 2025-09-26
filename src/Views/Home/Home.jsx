@@ -30,7 +30,7 @@ function Home() {
             <main>
                 <Box className={classes.titleBox}>
                     <h1 className={classes.title}>
-                        Outdoor Movie Nights • Concessions • Ice Cream Truck
+                        Outdoor Movie Nights • Concessions • Ice Cream Food Truck
                     </h1>
                     <h2 className={classes.subTitle}>
                         Perfect for homeowners, corporate events, HOAs, schools, churches, parks & rec, apartment communities, festivals, fundraisers, birthdays, graduations, block parties & more.

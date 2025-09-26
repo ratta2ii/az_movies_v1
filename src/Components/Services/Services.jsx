@@ -30,7 +30,7 @@ function Services() {
                                 />
                                 <CardContent>
                                     <Typography gutterBottom variant="h2" component="h2" className={classes.cardTitle} style={{fontFamily: 'serif'}}>
-                                        Movie Nights
+                                        Outdoor Movie Nights
                                     </Typography>
                                     <Typography variant="h3" component="h3" className={classes.cardSubtitle}>
                                         Backyard & Outdoor Screen Rentals
@@ -152,7 +152,7 @@ function Services() {
                                 />
                                 <CardContent>
                                     <Typography gutterBottom variant="h2" component="h2" className={classes.cardTitle} style={{fontFamily: 'serif'}}>
-                                        Ice Cream Truck
+                                        Ice Cream Food Truck
                                     </Typography>
                                     <Typography variant="h3" component="h3" className={classes.cardSubtitle}>
                                         Sundae Bars & Ice Cream Socials
@@ -198,6 +198,7 @@ function Services() {
                         </CardActions>
                     </Card>
                 </Grid>
+                
             </Grid>
         </main>
     );
