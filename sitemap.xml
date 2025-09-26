@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Static Pages -->
+  <url>
+    <loc>https://chinookwater.com/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://chinookwater.com/contact</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chinookwater.com/pricing</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chinookwater.com/service-areas</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- City-Level Pages -->
+  <url><loc>https://chinookwater.com/athol</loc></url>
+  <url><loc>https://chinookwater.com/blanchard</loc></url>
+  <url><loc>https://chinookwater.com/coeur-d-alene</loc></url>
+  <url><loc>https://chinookwater.com/kellogg</loc></url>
+  <url><loc>https://chinookwater.com/plummer</loc></url>
+  <url><loc>https://chinookwater.com/post-falls</loc></url>
+  <url><loc>https://chinookwater.com/priest-river</loc></url>
+  <url><loc>https://chinookwater.com/rathdrum</loc></url>
+  <url><loc>https://chinookwater.com/sandpoint</loc></url>
+  <url><loc>https://chinookwater.com/spirit-lake</loc></url>
+  <url><loc>https://chinookwater.com/deer-park</loc></url>
+  <url><loc>https://chinookwater.com/newport</loc></url>
+  <url><loc>https://chinookwater.com/spokane</loc></url>
+  <url><loc>https://chinookwater.com/benewah-county</loc></url>
+  <url><loc>https://chinookwater.com/bonner-county</loc></url>
+  <url><loc>https://chinookwater.com/kootenai-county</loc></url>
+  <url><loc>https://chinookwater.com/pend-oreille-county</loc></url>
+  <url><loc>https://chinookwater.com/spokane-county</loc></url>
+
+</urlset>
