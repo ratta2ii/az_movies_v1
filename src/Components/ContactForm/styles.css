@@ -1,0 +1,36 @@
+.blink {
+    animation: blink-animation 8s steps(8, start) infinite;
+    -webkit-animation: blink-animation 8s steps(8, start) infinite;
+    color: #fcb196;
+    font-weight: 600;
+    font-family: serif;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+  }
+  
+  @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  
+  @-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  
+  /* Accessibility: Respect user preferences */
+  @media (prefers-reduced-motion: reduce) {
+    .blink {
+      animation: none !important;
+    }
+  }
+  
+  /* Interaction states */
+  .blink:hover,
+  .blink:focus {
+    /* color: coral; */
+    text-decoration: none;
+    outline: none;
+  }
+  

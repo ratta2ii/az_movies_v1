@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/apple-touch-icon.png" />
+    <meta name="theme-color" content="#28528d">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="preload" as="image" href="/fish-logo.webp" type="image/webp" />
+    <link rel="preload" as="image" href="/bg_blue.webp" type="image/webp" />
+    <link rel="preload" as="image" href="/river.webp" type="image/webp" />
+
+    <title>AZ Movie Nights</title>
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/stars3.jpg');
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/stars3.jpg'); /* Use a different image for mobile */
+                background-attachment: fixed;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        }
+
+        #root {
+            min-height: 95vh;
+        }
+    </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "@id": "https://chinookwater.com/#business",
+      "name": "Chinook Water Testing",
+      "description": "Certified well water testing, flow rate inspections, and system inspections for real estate, loans, and property sales across North Idaho and Eastern Washington.",
+      "url": "https://chinookwater.com/",
+      "logo": { "@type": "ImageObject", "url": "https://chinookwater.com/chinookLogo.jpg" },
+      "image": "https://chinookwater.com/chinookLogo.jpg",
+      "telephone": "+1-208-352-3909",
+      "email": "chinookwatertesting@gmail.com",
+      "hasMap": "https://www.google.com/maps/place/7040+N+Colfax+St,+Dalton+Gardens,+ID+83815",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-208-352-3909",
+        "contactType": "Customer Service",
+        "email": "chinookwatertesting@gmail.com"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "7040 N Colfax St",
+        "addressLocality": "Dalton Gardens",
+        "addressRegion": "ID",
+        "postalCode": "83815",
+        "addressCountry": "US"
+      },
+      "geo": { "@type": "GeoCoordinates", "latitude": 47.733597, "longitude": -116.786011 },
+      "areaServed": {
+        "@type": "GeoCircle",
+        "geoMidpoint": { "@type": "GeoCoordinates", "latitude": 47.733597, "longitude": -116.786011 },
+        "geoRadius": 160934.4
+      },
+      "makesOffer": {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Certified Well Water Testing",
+          "description": "We provide certified well water testing, flow rate monitoring (GPM), and water system inspections. VA, FHA, USDA & HUD loan compliant. Serving North Idaho and Eastern Washington.",
+          "areaServed": "100-mile radius of Dalton Gardens, Idaho"
+        }
+      },
+      "openingHoursSpecification": [{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      }],
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=100093605359037",
+        "https://maps.app.goo.gl/yUWzg8K9mctDCtqVA"
+      ]
+    }
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <h1 class="sr-only">
+            Certified Well Water Testing, Flow Rate Testing (GPM) & System Inspections in North Idaho and Eastern
+            Washington.
+        </h1>
+        <h2 class="sr-only">
+            Serving all areas in North Idaho and Eastern Washington. VA, FHA, USDA, and HUD loan
+            compliance water testing.
+        </h2>
+    </header>
+    <div id="root"></div>
+</body>
+
+</html>

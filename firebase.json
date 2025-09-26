@@ -1,0 +1,57 @@
+{
+    "hosting": {
+        "public": "build",
+        "ignore": [
+            "firebase.json",
+            "**/.*",
+            "**/node_modules/**"
+        ],
+        "rewrites": [
+            {
+                "source": "**",
+                "function": "handleRequests"
+            }
+        ],
+        "redirects": [
+            {
+                "source": "/index.html",
+                "destination": "/",
+                "type": 301
+            },
+            {
+                "source": "/service-areas/:city",
+                "destination": "/:city",
+                "type": 301
+            },
+            {
+                "source": "https://www.chinookwater.com/**",
+                "destination": "https://chinookwater.com",
+                "type": 301
+            }
+        ],
+        "headers": [
+            {
+                "source": "**/*.@(js|css|jpg|jpeg|gif|png|svg|ico)",
+                "headers": [
+                    {
+                        "key": "Cache-Control",
+                        "value": "max-age=31536000"
+                    }
+                ]
+            },
+            {
+                "source": "**",
+                "headers": [
+                    {
+                        "key": "X-Prerender-Token",
+                        "value": "JxpIQ6g7xaiVKaySBwWn"
+                    }
+                ]
+            }
+        ]
+    },
+    "functions": {
+        "source": "functions",
+        "runtime": "nodejs20"
+    }
+}
