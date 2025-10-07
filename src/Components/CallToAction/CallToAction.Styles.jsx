@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme) => ({
     ctaBox: {
         maxWidth: 650,
-        margin: "150px auto 100px auto",
+        margin: "150px auto 150px auto",
         textAlign: "center",
         padding: theme.spacing(4),
         backgroundColor: "#0a0f18",

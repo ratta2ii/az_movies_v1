@@ -1,12 +1,11 @@
-// MovieNightsOptions.jsx
+import PopcornImage from './../../../Assets/Images/product-popcorn.jpg';
 import { Divider, Grid } from "@material-ui/core";
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions, Box, List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
-import CheckCircleIcon from '@material-ui/icons/CheckCircle'; // Added for green check icons
-import PopcornImage from './../../../Assets/Images/product-popcorn.jpg';
+import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 import CallToAction from "./../../../Components/CallToAction/CallToAction";
 import useStyles from './ConcessionsOptions.Styles';
 import { Link } from 'react-router-dom';
@@ -14,9 +13,6 @@ import { Link } from 'react-router-dom';
 function ConcessionsOptions() {
     const classes = useStyles();
 
-    // 🔹 All card content centralized here
-    // 🔹 All card content centralized here
-    // Concessions & Add-Ons
     const cards = [
         {
             key: 'popcorn',
@@ -25,6 +21,7 @@ function ConcessionsOptions() {
             imageAlt: 'Fresh popcorn concession',
             title: 'Popcorn',
             subtitle: 'Movie-theater style, fresh & hot',
+            price: '$175/event (includes ~50 servings)',
             bullets: [
                 'Commercial popcorn machine & cart (as available)',
                 'Supplies included (kernels, oil, bags)',
@@ -39,6 +36,7 @@ function ConcessionsOptions() {
             imageAlt: 'Cotton candy concession',
             title: 'Cotton Candy',
             subtitle: 'Classic spun sugar fun',
+            price: '$175/event (includes ~50 servings)',
             bullets: [
                 'Cotton candy machine & cones/bags',
                 'Assorted flavor options',
@@ -53,6 +51,7 @@ function ConcessionsOptions() {
             imageAlt: 'Ice cream concession',
             title: 'Ice Cream',
             subtitle: 'Novelties or scoop service',
+            price: 'Novelties from $299 / Scoop bar from $549',
             bullets: [
                 'Pre-packed novelties or scoop bar',
                 'Freezer or truck service options',
@@ -67,6 +66,7 @@ function ConcessionsOptions() {
             imageAlt: 'Event tables and chairs',
             title: 'Tables & Chairs',
             subtitle: 'Guest seating & staging',
+            price: 'Chairs $3 ea • Tables $12 ea • Packages from $99',
             bullets: [
                 'Folding chairs, cocktail & banquet tables',
                 'Delivery & setup available',
@@ -81,6 +81,7 @@ function ConcessionsOptions() {
             imageAlt: 'Quiet inverter generator',
             title: 'Generators',
             subtitle: 'Quiet power for any venue',
+            price: '$149/event (up to 4 hours)',
             bullets: [
                 'Quiet inverter generators',
                 'Power for projector, audio, and lights',
@@ -95,6 +96,7 @@ function ConcessionsOptions() {
             imageAlt: 'Additional screen add-on',
             title: 'Additional Screens',
             subtitle: 'Second screen & overflow viewing',
+            price: 'Small from $249 / Medium from $349',
             bullets: [
                 'Add a lobby/pre-show or gaming screen',
                 'Small and medium size options',
@@ -104,43 +106,37 @@ function ConcessionsOptions() {
         },
     ];
 
-
-
     return (
         <main>
-
             <Box className={classes.titleBox}>
                 <h1 className={classes.title}>
                     Concessions & Add On's — Popcorn • Cotton Candy • Ice Cream • Tables & Chairs • Generators • Additional Screens
                 </h1>
-
-                {/* <h2 className={classes.subTitle}>
-                    Turnkey outdoor cinema packages with multiple screen sizes, bright HD projection, and clear PA. We handle setup/teardown, time shows around sunset, and offer front or rear projection—great for backyards, courtyards, fields, and pool decks. Optional add-ons: pre-show music, host mic, sponsor slides, and movie-licensing guidance.
-                </h2> */}
             </Box>
 
-            <Grid container spacing={4} alignItems="stretch" justifyContent="center">
-                {cards.map(({ key, to, image, imageAlt, title, subtitle, bullets }) => (
+            <Grid container spacing={4} alignItems="stretch" justifyContent="center" className={classes.gridContainer}>
+                {cards.map(({ key, to, image, imageAlt, title, price, subtitle, bullets }) => (
                     <Grid item xs={12} md={4} key={key}>
-                        <Card className={classes.card}>
-                            <Link to={to} style={{ textDecoration: 'none' }}>
-                                <CardActionArea>
+                        <Card className={classes.card} style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
+                            <Link to={to} style={{ textDecoration: 'none', flexGrow: 1, display: 'flex' }}>
+                                <CardActionArea style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
                                     <CardMedia
                                         component="img"
                                         height="250"
                                         image={image}
                                         alt={imageAlt}
                                     />
-                                    <CardContent>
+                                    <CardContent style={{ display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
                                         <Typography
                                             gutterBottom
                                             variant="h2"
                                             component="h2"
                                             className={classes.cardTitle}
-                                            style={{ fontFamily: 'serif' }}
+                                            style={{ fontFamily: 'inherit' }}
                                         >
                                             {title}
                                         </Typography>
+
                                         <Typography
                                             variant="h3"
                                             component="h3"
@@ -148,7 +144,9 @@ function ConcessionsOptions() {
                                         >
                                             {subtitle}
                                         </Typography>
-                                        <Divider style={{ height: 1, marginTop: 14, backgroundColor: "white" }} />
+
+                                        <Divider style={{ height: 1, marginTop: 16, backgroundColor: "white" }} />
+
                                         <List className={classes.bulletList}>
                                             {bullets.map((item, i) => (
                                                 <ListItem key={i} className={classes.listItem}>
@@ -159,9 +157,44 @@ function ConcessionsOptions() {
                                                 </ListItem>
                                             ))}
                                         </List>
+
+                                        {/* Bottom block pinned above the buttons */}
+                                        <Box style={{ marginTop: 'auto' }}>
+                                            <Typography
+                                                variant="h4"
+                                                component="p"
+                                                className={classes.cardPrice}
+                                                style={{
+                                                    display: 'inline-block',
+                                                    padding: '4px 12px',
+                                                    borderRadius: 999,
+                                                    background: '#e51433ff',
+                                                    color: '#fff',
+                                                    fontWeight: 700,
+                                                    fontSize: '0.95rem',
+                                                    marginBottom: 6
+                                                }}
+                                                aria-label={`Price: ${price}`}
+                                            >
+                                                Price: {price}
+                                            </Typography>
+
+                                            <Typography
+                                                variant="body2"
+                                                component="p"
+                                                className={classes.quoteNote}
+                                                style={{ color: '#444', marginBottom: 0 }}
+                                            >
+                                                Final quote determined by event location and{' '}
+                                                <Link to="/concessions-options" className={classes.addOnsLink}>
+                                                    Concessions and Equipment ADD ON's
+                                                </Link>
+                                            </Typography>
+                                        </Box>
                                     </CardContent>
                                 </CardActionArea>
                             </Link>
+
                             <CardActions style={{ padding: 0 }}>
                                 <Box className={classes.buttonContainer}>
                                     <Button
@@ -186,6 +219,7 @@ function ConcessionsOptions() {
                     </Grid>
                 ))}
             </Grid>
+
             <CallToAction />
         </main>
     );

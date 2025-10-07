@@ -3,8 +3,8 @@ import { useLocation, Link } from "react-router-dom";
 import { Grid, Typography, Box, Divider, Button, List, ListItem, ListItemIcon, ListItemText } from "@material-ui/core";
 import CheckCircleIcon from '@material-ui/icons/CheckCircle'; // Added for green check icons
 import useStyles from "./Locations.Styles";
-import InspectionImg from "../../Assets/Images/inspection.webp";
-import ProductivityImg from "../../Assets/Images/productivity.webp";
+import InspectionImg from "../../Assets/Images/ice-cream-truck-two.jpg";
+import ProductivityImg from "../../Assets/Images/giant-screen.jpg";
 import CallToAction from "../../Components/CallToAction/CallToAction";
 import { Helmet } from "react-helmet";
 
@@ -79,8 +79,8 @@ function Locations() {
                     rel="canonical"
                     href={
                         isGeneralAreaPage
-                            ? "https://chinookwater.com/service-areas"
-                            : `https://chinookwater.com/${city}`
+                            ? "https://movienightpros.com/service-areas"
+                            : `https://movienightpros.com/${city}`
                     }
                 />
                 <meta
@@ -106,11 +106,11 @@ function Locations() {
                     property="og:url"
                     content={
                         isGeneralAreaPage
-                            ? "https://chinookwater.com/service-areas"
-                            : `https://chinookwater.com/${city}`
+                            ? "https://movienightpros.com/service-areas"
+                            : `https://movienightpros.com/${city}`
                     }
                 />
-                <meta property="og:image" content="https://chinookwater.com/chinookLogo.jpg" />
+                <meta property="og:image" content="https://movienightpros.com/chinookLogo.jpg" />
                 <meta property="og:image:alt" content="Chinook Water Testing company logo" />
             </Helmet>
 

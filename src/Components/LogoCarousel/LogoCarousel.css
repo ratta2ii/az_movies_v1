@@ -1,0 +1,84 @@
+.logo-carousel {
+  width: 100vw; /* Full viewport width */
+  max-width: 100%;
+  margin-left: calc(-1 * var(--root-padding, 10%)); /* Offset .root padding */
+  margin-right: calc(-1 * var(--root-padding, 10%));
+  padding: 20px 0 30px;
+  overflow: hidden;
+  background: #fff;
+  box-sizing: border-box;
+  contain: strict; /* Isolate layout, paint, and style */
+  isolation: isolate;
+  position: relative;
+}
+
+.logo-carousel__track {
+  display: flex;
+  width: max-content;
+  animation: scroll 40s linear infinite;
+}
+
+.logo-carousel__item {
+  flex: 0 0 auto;
+  width: 280px;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.logo-carousel__image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: filter 0.3s ease-in-out;
+  /* filter: grayscale(100%); */
+}
+
+.logo-carousel__image:hover {
+  filter: grayscale(0%);
+}
+
+@media screen and (max-width: 1280px) {
+  .logo-carousel__image {
+    max-height: 60px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .logo-carousel {
+    margin-left: calc(-1 * var(--root-padding, 5%)); /* Match .root media query */
+    margin-right: calc(-1 * var(--root-padding, 5%));
+  }
+
+  .logo-carousel__item {
+    width: 140px;
+    height: 90px;
+  }
+
+  .logo-carousel__track {
+    animation: scroll-sm 40s linear infinite;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-280px * 9)); /* Move one set of 9 logos */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  @keyframes scroll-sm {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-140px * 9));
+    }
+  }
+}

@@ -2,7 +2,13 @@ import { makeStyles } from '@material-ui/core/styles';
 
 
 const useStyles = makeStyles((theme) => ({
-        titleBox: {
+    gridContainer: {
+        padding: '0 18%',
+        [theme.breakpoints.down('lg')]: {
+            padding: 0,
+        },
+    },
+    titleBox: {
         // marginTop: 200,
         // marginBottom: 150,
         width: 985,
@@ -67,7 +73,7 @@ const useStyles = makeStyles((theme) => ({
         flexDirection: 'column',
         justifyContent: 'space-between',
         height: '100%',
-        backgroundColor: 'rgb(12 15 24 / 75%) !important',
+        backgroundColor: 'rgb(12 15 24 / 100%) !important',
         [theme.breakpoints.down('md')]: {
             padding: 5
         },
@@ -90,7 +96,8 @@ const useStyles = makeStyles((theme) => ({
     },
     cardSubtitle: {
         color: '#f9d3c5ff',
-        fontSize: '1.3em !important',
+        fontSize: '1.2em !important',
+        fontStyle: 'italic',
         fontWeight: 600,
     },
     bulletList: {
@@ -103,9 +110,25 @@ const useStyles = makeStyles((theme) => ({
             paddingLeft: 8,
         },
     },
+    cardPrice: {
+        color: "white",
+        fontSize: '1.5em !important',
+        marginTop: "30px !important",
+    },
+    quoteNote: {
+        color: "white !important",
+        fontStyle: 'italic',
+        marginTop: 20,
+        fontSize: '0.9em',
+    },
+    addOnsLink: {
+        color: "#4d7cc2ff",
+        textDecoration: 'underline',
+        marginBottom: -10,
+    },
     listItem: {
         padding: 0,
-        paddingBottom: 5,
+        paddingBottom: "0px !important",
         alignItems: 'center',
         '& .MuiListItemText-primary': {
             marginLeft: -30,
@@ -134,7 +157,7 @@ const useStyles = makeStyles((theme) => ({
         textTransform: "none",
         minWidth: 130,
         width: '50%',
-        height: 45,
+        height: 37,
         borderRadius: 0,
         '&:first-of-type': {
             background: 'linear-gradient(45deg, #1f4898, #1365b7)',

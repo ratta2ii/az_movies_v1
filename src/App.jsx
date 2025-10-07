@@ -48,12 +48,12 @@ function App() {
                         content="Certified well water testing, GPM flow rate testing, and system inspections. Serving North Idaho and Eastern Washington."
                     />
                     <meta name="author" content="Chinook Water Testing" />
-                    <meta property="og:image" content="https://chinookwater.com/chinookLogo.jpg" />
+                    <meta property="og:image" content="https://movienightpros.com/chinookLogo.jpg" />
                     <meta property="og:image:alt" content="Chinook Water Testing company logo" />
-                    <meta property="og:url" content="https://chinookwater.com/" />
+                    <meta property="og:url" content="https://movienightpros.com/" />
                     <meta property="og:type" content="website" />
                     <meta name="robots" content="index, follow" />
-                    <link rel="canonical" href="https://chinookwater.com/" />
+                    <link rel="canonical" href="https://movienightpros.com/" />
                 </Helmet>
                 <NavBar />
                 <ScrollToTop />

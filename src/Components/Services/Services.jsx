@@ -29,7 +29,7 @@ function Services() {
                                     alt="Our Services include State Certified Well Water Testing"
                                 />
                                 <CardContent>
-                                    <Typography gutterBottom variant="h2" component="h2" className={classes.cardTitle} style={{fontFamily: 'serif'}}>
+                                    <Typography gutterBottom variant="h2" component="h2" className={classes.cardTitle} style={{fontFamily: 'inherit'}}>
                                         Outdoor Movie Nights
                                     </Typography>
                                     <Typography variant="h3" component="h3" className={classes.cardSubtitle}>
@@ -90,7 +90,7 @@ function Services() {
                                     loading="lazy"
                                 />
                                 <CardContent>
-                                    <Typography gutterBottom variant="h2" component="h2" className={classes.cardTitle} style={{fontFamily: 'serif'}}>
+                                    <Typography gutterBottom variant="h2" component="h2" className={classes.cardTitle} style={{fontFamily: 'inherit'}}>
                                         Concessions
                                     </Typography>
                                     <Typography variant="h3" component="h3" className={classes.cardSubtitle}>
@@ -151,7 +151,7 @@ function Services() {
                                     loading="lazy"
                                 />
                                 <CardContent>
-                                    <Typography gutterBottom variant="h2" component="h2" className={classes.cardTitle} style={{fontFamily: 'serif'}}>
+                                    <Typography gutterBottom variant="h2" component="h2" className={classes.cardTitle} style={{fontFamily: 'inherit'}}>
                                         Ice Cream Food Truck
                                     </Typography>
                                     <Typography variant="h3" component="h3" className={classes.cardSubtitle}>
@@ -198,7 +198,6 @@ function Services() {
                         </CardActions>
                     </Card>
                 </Grid>
-                
             </Grid>
         </main>
     );

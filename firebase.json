@@ -24,8 +24,8 @@
                 "type": 301
             },
             {
-                "source": "https://www.chinookwater.com/**",
-                "destination": "https://chinookwater.com",
+                "source": "https://www.movienightpros.com/**",
+                "destination": "https://movienightpros.com",
                 "type": 301
             }
         ],

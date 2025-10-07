@@ -3,44 +3,44 @@
 
   <!-- Static Pages -->
   <url>
-    <loc>https://chinookwater.com/</loc>
+    <loc>https://movienightpros.com/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://chinookwater.com/contact</loc>
+    <loc>https://movienightpros.com/contact</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chinookwater.com/pricing</loc>
+    <loc>https://movienightpros.com/pricing</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chinookwater.com/service-areas</loc>
+    <loc>https://movienightpros.com/service-areas</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- City-Level Pages -->
-  <url><loc>https://chinookwater.com/athol</loc></url>
-  <url><loc>https://chinookwater.com/blanchard</loc></url>
-  <url><loc>https://chinookwater.com/coeur-d-alene</loc></url>
-  <url><loc>https://chinookwater.com/kellogg</loc></url>
-  <url><loc>https://chinookwater.com/plummer</loc></url>
-  <url><loc>https://chinookwater.com/post-falls</loc></url>
-  <url><loc>https://chinookwater.com/priest-river</loc></url>
-  <url><loc>https://chinookwater.com/rathdrum</loc></url>
-  <url><loc>https://chinookwater.com/sandpoint</loc></url>
-  <url><loc>https://chinookwater.com/spirit-lake</loc></url>
-  <url><loc>https://chinookwater.com/deer-park</loc></url>
-  <url><loc>https://chinookwater.com/newport</loc></url>
-  <url><loc>https://chinookwater.com/spokane</loc></url>
-  <url><loc>https://chinookwater.com/benewah-county</loc></url>
-  <url><loc>https://chinookwater.com/bonner-county</loc></url>
-  <url><loc>https://chinookwater.com/kootenai-county</loc></url>
-  <url><loc>https://chinookwater.com/pend-oreille-county</loc></url>
-  <url><loc>https://chinookwater.com/spokane-county</loc></url>
+  <url><loc>https://movienightpros.com/athol</loc></url>
+  <url><loc>https://movienightpros.com/blanchard</loc></url>
+  <url><loc>https://movienightpros.com/coeur-d-alene</loc></url>
+  <url><loc>https://movienightpros.com/kellogg</loc></url>
+  <url><loc>https://movienightpros.com/plummer</loc></url>
+  <url><loc>https://movienightpros.com/post-falls</loc></url>
+  <url><loc>https://movienightpros.com/priest-river</loc></url>
+  <url><loc>https://movienightpros.com/rathdrum</loc></url>
+  <url><loc>https://movienightpros.com/sandpoint</loc></url>
+  <url><loc>https://movienightpros.com/spirit-lake</loc></url>
+  <url><loc>https://movienightpros.com/deer-park</loc></url>
+  <url><loc>https://movienightpros.com/newport</loc></url>
+  <url><loc>https://movienightpros.com/spokane</loc></url>
+  <url><loc>https://movienightpros.com/benewah-county</loc></url>
+  <url><loc>https://movienightpros.com/bonner-county</loc></url>
+  <url><loc>https://movienightpros.com/kootenai-county</loc></url>
+  <url><loc>https://movienightpros.com/pend-oreille-county</loc></url>
+  <url><loc>https://movienightpros.com/spokane-county</loc></url>
 
 </urlset>
