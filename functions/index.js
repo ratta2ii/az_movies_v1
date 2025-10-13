@@ -2,9 +2,29 @@ const functions = require('firebase-functions');
 
 exports.handleRequests = functions.https.onRequest((req, res) => {
     const validRoutes = [
-        '/', '/faqs', '/contact', '/locations',
-        '/movie-nights-options', '/concessions-options', '/ice-cream-truck', '/mesa',
-        '/scottsdale', '/tempe'
+        '/',
+        '/faqs',
+        '/contact',
+        '/locations',
+        '/gallery',
+        '/movie-nights-options',
+        '/concessions-options',
+        '/ice-cream-food-truck',
+        '/mesa',
+        '/scottsdale',
+        '/tempe',
+        '/phoenix',
+        '/gilbert',
+        '/chandler',
+        '/paradise-valley',
+        '/glendale',
+        '/peoria',
+        '/queen-creek',
+        '/san-tan-valley',
+        '/tolleson',
+        '/buckeye',
+        '/goodyear',
+        '/anthem',
     ];
 
     if (!validRoutes.includes(req.path)) {

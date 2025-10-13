@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: 'rgb(12 15 24 / 75%)',
         marginTop: 200,
         marginBottom: 100, // Update responsive margins TODO:
-        padding: "150px 25%",
+        padding: "150px 8%",
         [theme.breakpoints.down("lg")]: {
             padding: "100px 12% 150px",
         },
@@ -62,7 +62,7 @@ const useStyles = makeStyles((theme) => ({
         fontSize: "2rem",
         marginBottom: 10,
         // color: "#1b2027",
-        color: "white",
+        color: "#fff",
         [theme.breakpoints.down("sm")]: {
             fontSize: "2.2rem",
         },
@@ -70,14 +70,14 @@ const useStyles = makeStyles((theme) => ({
     subtext: {
         fontSize: "1.1rem",
         // color: "#444",
-        color: "white",
+        color: "#fff",
         marginBottom: 15,
         lineHeight: "1.4em",
     },
     italicSubtext: {
         fontSize: "1.1rem",
         // color: "#444",
-        color: "white",
+        color: "#fff",
         marginBottom: 15,
         fontStyle: "italic",
         lineHeight: "1.4em",
@@ -102,7 +102,7 @@ const useStyles = makeStyles((theme) => ({
     },
     listItemText: {
         // color: "#444",
-        color: "white",
+        color: "#fff",
         fontSize: "1rem",
         marginLeft: theme.spacing(2), // Indentation for hyphens
     },
@@ -110,7 +110,7 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: 600,
         fontSize: "1.2rem",
         // color: "#1b2027",
-        color: "white",
+        color: "#fff",
         marginTop: theme.spacing(2),
         marginBottom: theme.spacing(1),
     },
@@ -118,7 +118,7 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: 600,
         fontSize: "1.2rem",
         // color: "#1b2027",
-        color: "white",
+        color: "#fff",
         marginTop: -10,
         marginBottom: theme.spacing(1),
     },
@@ -193,7 +193,7 @@ const IceCreamTruck = () => {
                         justifyContent: "center",
                         alignItems: "center",
                         // backgroundColor: 'aliceblue',
-                        color: 'white',
+                        color: '#fff',
                     }} >
                     <Typography variant="h1" style={{fontSize: "1.8em"}}>Sundae Bar & Barista Coffee Truck for Events in Phoenix</Typography>
                 </Box>

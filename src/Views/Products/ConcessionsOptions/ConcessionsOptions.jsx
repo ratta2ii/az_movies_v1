@@ -1,4 +1,3 @@
-import PopcornImage from './../../../Assets/Images/product-popcorn.jpg';
 import { Divider, Grid } from "@material-ui/core";
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -6,6 +5,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions, Box, List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
 import CheckCircleIcon from '@material-ui/icons/CheckCircle';
+import PopcornImage from './../../../Assets/Images/product-cotton-candy.jpg';
 import CallToAction from "./../../../Components/CallToAction/CallToAction";
 import useStyles from './ConcessionsOptions.Styles';
 import { Link } from 'react-router-dom';
@@ -145,7 +145,7 @@ function ConcessionsOptions() {
                                             {subtitle}
                                         </Typography>
 
-                                        <Divider style={{ height: 1, marginTop: 16, backgroundColor: "white" }} />
+                                        <Divider style={{ height: 1, marginTop: 16, backgroundColor: "#730a1b" }} />
 
                                         <List className={classes.bulletList}>
                                             {bullets.map((item, i) => (
@@ -200,18 +200,18 @@ function ConcessionsOptions() {
                                     <Button
                                         size="small"
                                         className={classes.contactButton}
-                                        component={Link}
-                                        to="/contact"
-                                    >
-                                        Get a Quote
-                                    </Button>
-                                    <Button
-                                        size="small"
-                                        className={classes.contactButton}
                                         component="a"
                                         href="tel:+12083523909"
                                     >
                                         (208) 352-3909
+                                    </Button>
+                                    <Button
+                                        size="small"
+                                        className={classes.contactButton}
+                                        component={Link}
+                                        to="/contact"
+                                    >
+                                        Get a Quote
                                     </Button>
                                 </Box>
                             </CardActions>

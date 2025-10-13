@@ -26,18 +26,18 @@ function FAQs() {
           property="og:description"
           content="Answers to frequently asked questions about outdoor movie rentals, including delivery, setup, projection, and wind safety."
         />
-        <meta name="author" content="AZ Movie Nights" />
+        <meta name="author" content="Outdoor Movie Pros" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="AZ Movie Nights" />
-        <meta property="og:url" content="https://yourdomain.com/faqs" />
-        <meta property="og:image" content="https://yourdomain.com/logo.jpg" />
-        <meta property="og:image:alt" content="AZ Movie Nights company logo" />
+        <meta property="og:site_name" content="Outdoor Movie Pros" />
+        <meta property="og:url" content="https://outdoormoviepros.com/faqs" />
+        <meta property="og:image" content="https://outdoormoviepros.com/logo.jpg" />
+        <meta property="og:image:alt" content="Outdoor Movie Pros company logo" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://yourdomain.com/faqs" />
+        <link rel="canonical" href="https://outdoormoviepros.com/faqs" />
       </Helmet>
 
       <header className="sr-only">Frequently Asked Questions</header>
-
+ 
       <Box className={classes.titleBox}>
         <Typography variant="h1" className={classes.title}>
           Frequently Asked Questions

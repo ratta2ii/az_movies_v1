@@ -5,7 +5,7 @@ import Box from "@material-ui/core/Box";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import LogoCarousel from "../LogoCarousel/LogoCarousel";
-import AmericanFlag from "./../../Assets/Images/american_flag.png";
+import AmericanFlagLogo from "./../../Assets/Images/american_flag.png";
 import { makeStyles } from "@material-ui/core/styles";
 // MUI v5 dropdown
 import { Button, Menu, MenuItem, Divider } from "@mui/material";
@@ -127,7 +127,7 @@ const useStyles = makeStyles((theme) => ({
 const Footer = (props) => {
     const classes = useStyles();
     const location = useLocation();
-    const showCarousel = location.pathname === "/" || location.pathname === "/ice-cream-truck";
+    const showCarousel = location.pathname === "/" || location.pathname === "/ice-cream-food-truck";
 
     // Locations dropdown state/handlers
     const [anchorEl, setAnchorEl] = React.useState(null);
@@ -161,8 +161,8 @@ const Footer = (props) => {
                         <Box className={classes.infoLine}>
                             <i className={`fas fa-envelope ${classes.infoIcon}`}></i>
                             <Typography className={classes.infoText}>
-                                <a href="mailto:info@icecreamsociables.com" style={{ color: "#efefef", textDecoration: "none", fontSize: 18 }}>
-                                    info@icecreamsociables.com
+                                <a href="mailto:info@outdoormoviepros.com" style={{ color: "#efefef", textDecoration: "none", fontSize: 18 }}>
+                                    info@outdoormoviepros.com
                                 </a>
                             </Typography>
                         </Box>
@@ -197,15 +197,21 @@ const Footer = (props) => {
                                 keepMounted
                                 MenuListProps={{ "aria-labelledby": "service-areas-button" }}
                             >
-                                <MenuItem onClick={handleCloseLocations} component={Link} to="/mesa">
-                                    Mesa
-                                </MenuItem>
-                                <MenuItem onClick={handleCloseLocations} component={Link} to="/scottsdale">
-                                    Scottsdale
-                                </MenuItem>
-                                <MenuItem onClick={handleCloseLocations} component={Link} to="/tempe">
-                                    Tempe
-                                </MenuItem>
+                                <MenuItem onClick={handleCloseLocations} component={Link} to="/phoenix">Phoenix</MenuItem>
+                                <MenuItem onClick={handleCloseLocations} component={Link} to="/mesa">Mesa</MenuItem>
+                                <MenuItem onClick={handleCloseLocations} component={Link} to="/scottsdale">Scottsdale</MenuItem>
+                                <MenuItem onClick={handleCloseLocations} component={Link} to="/gilbert">Gilbert</MenuItem>
+                                <MenuItem onClick={handleCloseLocations} component={Link} to="/chandler">Chandler</MenuItem>
+                                <MenuItem onClick={handleCloseLocations} component={Link} to="/tempe">Tempe</MenuItem>
+                                <MenuItem onClick={handleCloseLocations} component={Link} to="/paradise-valley">Paradise Valley</MenuItem>
+                                <MenuItem onClick={handleCloseLocations} component={Link} to="/glendale">Glendale</MenuItem>
+                                <MenuItem onClick={handleCloseLocations} component={Link} to="/peoria">Peoria</MenuItem>
+                                <MenuItem onClick={handleCloseLocations} component={Link} to="/queen-creek">Queen Creek</MenuItem>
+                                <MenuItem onClick={handleCloseLocations} component={Link} to="/san-tan-valley">San Tan Valley</MenuItem>
+                                <MenuItem onClick={handleCloseLocations} component={Link} to="/tolleson">Tolleson</MenuItem>
+                                <MenuItem onClick={handleCloseLocations} component={Link} to="/buckeye">Buckeye</MenuItem>
+                                <MenuItem onClick={handleCloseLocations} component={Link} to="/goodyear">Goodyear</MenuItem>
+                                <MenuItem onClick={handleCloseLocations} component={Link} to="/anthem">Anthem</MenuItem>
                                 <Divider />
                                 <MenuItem onClick={handleCloseLocations} component={Link} to="/locations">
                                     Other Locations
@@ -230,9 +236,9 @@ const Footer = (props) => {
                     <Box className={classes.copyrightSig}>
                         Presented By{" "}
                         <img
-                            src={AmericanFlag}
-                            alt="Ice Cream Sociables"
-                            style={{ height: "1em", verticalAlign: "middle" }}
+                            src={AmericanFlagLogo}
+                            alt="American Flag Logo"
+                            style={{ height: "1.5em", verticalAlign: "middle" }}
                         />{" "}
                         © 2025
                     </Box>

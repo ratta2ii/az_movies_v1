@@ -18,7 +18,7 @@ Firebase Hosting is used to deploy and serve the frontend React application over
 
 **Key Features**
 - **Static Hosting**: Deployed from the `build/` directory using `npm run build`.
-- **Custom Domain**: Live at [https://movienightpros.com](https://movienightpros.com), with Firebase-managed SSL.
+- **Custom Domain**: Live at [https://outdoormoviepros.com](https://outdoormoviepros.com), with Firebase-managed SSL.
 - **SPA Rewrites**: Configured in `firebase.json` for clean routing of React routes.
 - **Prerender.io Integration**: Adds the `X-Prerender-Token` header to support SEO-friendly rendering for bots and crawlers.
 - **Cache Control**: Includes long-lived caching for static assets and customized headers for performance tuning.

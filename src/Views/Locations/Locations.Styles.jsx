@@ -41,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
         marginTop: 100,
         marginBottom: 20,
         textAlign: 'center',
-        fontSize: '1.8em',
+        fontSize: 28,
         color: '#fff',
         fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
         fontWeight: 600,
@@ -84,7 +84,7 @@ const useStyles = makeStyles((theme) => ({
         marginBottom: theme.spacing(2),
         fontSize: "2em",
         color: "antiqueWhite",
-        fontFamily: 'serif',
+        // fontFamily: 'serif',
         [theme.breakpoints.down('xs')]: {
             fontSize: "1.7em",
             marginTop: -25,
@@ -117,7 +117,7 @@ const useStyles = makeStyles((theme) => ({
     },
     icon: {
         // color: "#66bb6a",
-        color: "white",
+        color: "#fff",
         fontSize: '1.2rem', // Match text size
         minWidth: 24, // Reduce gap between icon and text
         marginLeft: 20,
@@ -203,9 +203,9 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: 500,
         textTransform: "none",
         minWidth: 130,
-        width: '49%',
+        width: '100%',
         height: 45,
-        borderRadius: 0,
+        borderRadius: 5,
         '&:first-of-type': {
             background: '#1d293d',
             '&:hover, &:focus': {

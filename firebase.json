@@ -19,13 +19,8 @@
                 "type": 301
             },
             {
-                "source": "/service-areas/:city",
-                "destination": "/:city",
-                "type": 301
-            },
-            {
-                "source": "https://www.movienightpros.com/**",
-                "destination": "https://movienightpros.com",
+                "source": "https://www.outdoormoviepros.com/**",
+                "destination": "https://outdoormoviepros.com",
                 "type": 301
             }
         ],
@@ -44,7 +39,7 @@
                 "headers": [
                     {
                         "key": "X-Prerender-Token",
-                        "value": "JxpIQ6g7xaiVKaySBwWn"
+                        "value": "TODO:ADD_NEW_TOKEN_HERE"
                     }
                 ]
             }

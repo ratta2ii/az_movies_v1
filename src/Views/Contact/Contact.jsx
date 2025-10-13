@@ -16,7 +16,7 @@ function Contact() {
 
                 <meta name="keywords" content="well water testing, flow rate monitoring, water system inspections, North Idaho, Eastern Washington" />
                 <meta name="robots" content="index, follow" />
-                <link rel="canonical" href="https://movienightpros.com/contact" />
+                <link rel="canonical" href="https://outdoormoviepros.com/contact" />
 
                 <meta property="og:title" content="Contact Chinook Water Testing | North Idaho & Eastern Washington" />
                 <meta
@@ -26,8 +26,8 @@ function Contact() {
                 <meta name="author" content="Chinook Water Testing" />
                 <meta property="og:type" content="website" />
                 <meta property="og:site_name" content="Chinook Water Testing" />
-                <meta property="og:url" content="https://movienightpros.com/contact" />
-                <meta property="og:image" content="https://movienightpros.com/chinookLogo.jpg" />
+                <meta property="og:url" content="https://outdoormoviepros.com/contact" />
+                <meta property="og:image" content="https://outdoormoviepros.com/company-logo.webp" />
                 <meta property="og:image:alt" content="Chinook Water Testing company logo" />
             </Helmet>
 
@@ -40,7 +40,7 @@ function Contact() {
             <main className={classes.root}>
                 <div className={classes.titleBox}>
                     <Typography variant="h1" className={classes.title}>
-                        Contact Movie Night Pro's today for fast service and{' '}
+                        Contact Outdoor Movie Pros today for fast service and{' '}
                         <Link to="/faqs" style={{ color: '#fff', textDecoration: 'underline', fontWeight: 600 }}>
                             competitive pricing
                         </Link>
@@ -51,7 +51,7 @@ function Contact() {
                     </Typography>
                     <Box className={classes.infoBox}>
                         <Typography variant="body1" className={classes.infoText}>
-                            <strong>Company:</strong>{' '}Movie Night Pro's
+                            <strong>Company:</strong>{' '}Outdoor Movie Pros
                         </Typography>
                         <Typography variant="body1" className={classes.infoText}>
                             <strong>Phone:</strong>{' '}
@@ -67,14 +67,14 @@ function Contact() {
                         </Typography>
                         <Typography variant="body1" className={classes.infoText}>
                             <strong>Email:</strong>{' '}
-                            <a href="mailto:chinookwatertesting@gmail.com">info@movienightpros.com</a>
+                            <a href="mailto:info@outdoormoviepros.com">info@outdoormoviepros.com</a>
                         </Typography>
                         {/* <Typography variant="body1" className={classes.infoText}>
                             <strong>Address:</strong> 7040 N Colfax St, Dalton Gardens, ID 83815
                         </Typography> */}
                         <Typography variant="body1" className={classes.infoText}>
                             <strong>Website:</strong>{' '}
-                            <a href="https://movienightpros.com" target="_blank" rel="noopener noreferrer">movienightpros.com</a>
+                            <a href="https://outdoormoviepros.com" target="_blank" rel="noopener noreferrer">outdoormoviepros.com</a>
                         </Typography>
                     </Box>
 

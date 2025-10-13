@@ -5,9 +5,9 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions, Box, List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
 import CheckCircleIcon from '@material-ui/icons/CheckCircle'; // Added for green check icons
-import GiantScreenImage from './../../Assets/Images/giant-screen.jpg';
-import ConcessionsImage from './../../Assets/Images/e2.jpg';
-import IceCreamTruckImage from './../../Assets/Images/ice-cream-truck.jpg';
+import GiantScreenImage from './../../Assets/Images/giant-screen.webp';
+import ConcessionsImage from './../../Assets/Images/e2.webp';
+import IceCreamTruckImage from './../../Assets/Images/ice-cream-truck.webp';
 import useStyles from './Services.Styles';
 import { Link } from 'react-router-dom';
 
@@ -57,20 +57,13 @@ function Services() {
                         <CardActions style={{ padding: 0 }}>
                             <Box className={classes.buttonContainer}>
                                 <Button
-                                    size="small"
+                                    size="large"
                                     className={classes.contactButton}
                                     component={Link}
-                                    to="/contact"
+                                    to="/movie-nights-options"
+                                    style={{ width: '100%' }}
                                 >
-                                    Get a Quote
-                                </Button>
-                                <Button
-                                    size="small"
-                                    className={classes.contactButton}
-                                    component="a"
-                                    href="tel:+12083523909"
-                                >
-                                    (208) 352-3909
+                                    View Options
                                 </Button>
                             </Box>
                         </CardActions>
@@ -118,20 +111,13 @@ function Services() {
                         <CardActions style={{ padding: 0 }}>
                             <Box className={classes.buttonContainer}>
                                 <Button
-                                    size="small"
+                                    size="large"
                                     className={classes.contactButton}
                                     component={Link}
-                                    to="/contact"
+                                    to="/concessions-options"
+                                    style={{ width: '100%' }}
                                 >
-                                    Get a Quote
-                                </Button>
-                                <Button
-                                    size="small"
-                                    className={classes.contactButton}
-                                    component="a"
-                                    href="tel:+12083523909"
-                                >
-                                    (208) 352-3909
+                                    View Options
                                 </Button>
                             </Box>
                         </CardActions>
@@ -141,7 +127,7 @@ function Services() {
                 {/* System Inspection Card */}
                 <Grid item xs={12} md={4}>
                     <Card className={classes.card}>
-                        <Link to="/ice-cream-truck" style={{ textDecoration: 'none' }}>
+                        <Link to="/ice-cream-food-truck" style={{ textDecoration: 'none' }}>
                             <CardActionArea>
                                 <CardMedia
                                     component="img"
@@ -152,7 +138,7 @@ function Services() {
                                 />
                                 <CardContent>
                                     <Typography gutterBottom variant="h2" component="h2" className={classes.cardTitle} style={{fontFamily: 'inherit'}}>
-                                        Ice Cream Food Truck
+                                        Ice Cream Sundaes & Coffee Food Truck
                                     </Typography>
                                     <Typography variant="h3" component="h3" className={classes.cardSubtitle}>
                                         Sundae Bars & Ice Cream Socials
@@ -179,20 +165,13 @@ function Services() {
                         <CardActions style={{ padding: 0 }}>
                             <Box className={classes.buttonContainer}>
                                 <Button
-                                    size="small"
+                                    size="large"
                                     className={classes.contactButton}
                                     component={Link}
-                                    to="/contact"
+                                    to="/ice-cream-food-truck"
+                                    style={{ width: '100%' }}
                                 >
-                                    Get a Quote
-                                </Button>
-                                <Button
-                                    size="small"
-                                    className={classes.contactButton}
-                                    component="a"
-                                    href="tel:+12083523909"
-                                >
-                                    (208) 352-3909
+                                    Learn More
                                 </Button>
                             </Box>
                         </CardActions>

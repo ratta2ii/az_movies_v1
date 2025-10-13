@@ -12,7 +12,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import ChinookLogo from './../../Assets/Images/chinookLogo.jpg';
+import CompanyLogo from './../../Assets/Images/company-logo.webp';
 import HomeIcon from '@mui/icons-material/Home';
 import BuildCircleIcon from '@mui/icons-material/BuildCircle';
 import ContactMailIcon from '@mui/icons-material/ContactMail';
@@ -36,9 +36,9 @@ function NavBar(props) {
   const drawer = (
     <nav onClick={handleDrawerToggle} style={{ textAlign: 'center', backgroundColor: '#ffffff' }}>
       <img
-        src={ChinookLogo}
-        alt='Chinook Water Testing logo'
-        style={{ width: '150px', marginTop: 20, marginBottom: 10 }}
+        src={CompanyLogo}
+        alt='Outdoor Movie Pros logo'
+        style={{ width: '120px', marginTop: 20, marginBottom: 10 }}
         loading="lazy"
       />
       <Divider />
@@ -175,7 +175,7 @@ function NavBar(props) {
   return (
     <nav style={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar component="nav" style={{ backgroundColor: '#0b0f18', minHeight: 75, paddingTop: 12 }}>
+      <AppBar component="nav" style={{ backgroundColor: '#0b0f18', minHeight: 75, paddingTop: 12, borderBottom: "5px solid #1c222a" }}>
         {isMobile ? (
           <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
             {/* Hamburger */}
@@ -204,10 +204,10 @@ function NavBar(props) {
             <Box sx={{ display: 'flex', justifyContent: 'flex-end', width: '22%', pr: .5 }}>
               <Link to="/">
                 <img
-                  src={ChinookLogo}
+                  src={CompanyLogo}
                   width="72"
-                  alt="Chinook Water Testing logo"
-                  style={{ border: '3px solid white', borderRadius: '50%' }}
+                  alt="Outdoor Movie Pros logo"
+                  style={{ border: '3px solid #fff', borderRadius: '50%' }}
                   loading="lazy"
                 />
               </Link>
@@ -218,10 +218,10 @@ function NavBar(props) {
             <Box sx={{ flexGrow: 1, display: 'flex', alignItems: 'center' }}>
               <Link to='/'>
                 <img
-                  src={ChinookLogo}
-                  width="100"
-                  alt='Chinook Water Testing logo'
-                  style={{ margin: '12px 20px 15px 0px', border: '10px solid white', borderRadius: '50%' }}
+                  src={CompanyLogo}
+                  width="90"
+                  alt='Outdoor Movie Pros logo'
+                  style={{ margin: "15px 25px 25px 10px" }}
                   loading="lazy"
                 />
               </Link>

@@ -6,6 +6,9 @@ import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions, Box, List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
 import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 import GiantScreenImage from './../../../Assets/Images/giant-screen.jpg';
+import PoolImage from './../../../Assets/Images/pool.webp';
+import SmallScreenImage from './../../../Assets/Images/GalleryImages/gallery2.webp';
+import DoubleScreenImage from './../../../Assets/Images/double-movie-screen.webp';
 import CallToAction from "./../../../Components/CallToAction/CallToAction";
 import useStyles from './MovieNightsOptions.Styles';
 import { Link } from 'react-router-dom';
@@ -32,7 +35,7 @@ function MovieNightsOptions() {
     {
       key: 'backyard',
       to: '/movie-nights-options#backyard',
-      image: GiantScreenImage,
+      image: SmallScreenImage,
       imageAlt: 'Backyard movie screen with family seating',
       title: 'Backyard Movie Screen',
       price: '$349.00',
@@ -47,7 +50,7 @@ function MovieNightsOptions() {
     {
       key: 'small-event',
       to: '/movie-nights-options#small-event',
-      image: GiantScreenImage,
+      image: SmallScreenImage,
       imageAlt: 'Small event outdoor movie screen at a community park',
       title: 'Small Event Movie Screen',
       price: '$479.00',
@@ -62,7 +65,7 @@ function MovieNightsOptions() {
     {
       key: 'double-screen',
       to: '/movie-nights-options#double-screen',
-      image: GiantScreenImage,
+      image: DoubleScreenImage,
       imageAlt: 'Two outdoor movie screens running simultaneously',
       title: 'Double Screen Movie Night',
       price: '$1,099.00',
@@ -77,7 +80,7 @@ function MovieNightsOptions() {
     {
       key: 'dive-in',
       to: '/movie-nights-options#dive-in',
-      image: GiantScreenImage,
+      image: PoolImage,
       imageAlt: 'Poolside dive-in movie setup with rear projection',
       title: 'Large Screen Dive-In Movie Night',
       price: '$699.00',
@@ -130,7 +133,7 @@ function MovieNightsOptions() {
                       {subtitle}
                     </Typography>
 
-                    <Divider style={{ height: 1, marginTop: 16, backgroundColor: "white" }} />
+                    <Divider style={{ height: 1, marginTop: 16, backgroundColor: "#730a1b" }} />
 
                     <List className={classes.bulletList}>
                       {bullets.map((item, i) => (
@@ -185,18 +188,18 @@ function MovieNightsOptions() {
                   <Button
                     size="small"
                     className={classes.contactButton}
-                    component={Link}
-                    to="/contact"
-                  >
-                    Get a Quote
-                  </Button>
-                  <Button
-                    size="small"
-                    className={classes.contactButton}
                     component="a"
                     href="tel:+12083523909"
                   >
                     (208) 352-3909
+                  </Button>
+                  <Button
+                    size="small"
+                    className={classes.contactButton}
+                    component={Link}
+                    to="/contact"
+                  >
+                    Get a Quote
                   </Button>
                 </Box>
               </CardActions>

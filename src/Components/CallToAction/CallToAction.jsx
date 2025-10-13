@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Box, Button, Typography, Grid } from "@material-ui/core";
+import InsuranceSeal from './../../Assets/Images/insurance-seal.webp';
 import useStyles from "./CallToAction.Styles";
 
 
@@ -15,7 +16,7 @@ function CallToAction() {
             <Grid container spacing={4} alignItems="center" justifyContent="center">
                 <Grid item>
                     <img
-                        src="/insurance-seal.webp" // Replace with your image path
+                        src={InsuranceSeal}
                         alt="Chinook Water Testing is Licensed and Insured"
                         className={classes.ctaImage}
                         style={{ width: 120, height: 120 }} // Adjust size as needed

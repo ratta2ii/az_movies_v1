@@ -4,7 +4,7 @@ const useStyles = makeStyles((theme) => ({
     root: {
         height: '50px',
         backgroundColor: '#0b0f18',
-        color: 'white',
+        color: '#fff',
         textAlign: 'center',
         display: 'flex',
         alignItems: 'center',

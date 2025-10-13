@@ -36,32 +36,44 @@ function App() {
             <div className="root" style={{ flex: 1 }}>
                 {/* Global SEO Tags */}
                 <Helmet>
-                    <title>Well Water Testing & System Inspections in North Idaho & Eastern WA</title>
-                    <meta name="description" content="Certified well water testing, GPM flow rate testing, and system inspections. Serving North Idaho and Eastern Washington." />
+                    <title>Outdoor Movie Pros | Outdoor Movies & Concessions in Phoenix</title>
+                    <meta name="description" content="Outdoor movies and concessions in Phoenix, AZ. Book your event today!" />
                     <meta
                         name="keywords"
-                        content="well water testing, flow rate testing, system inspections, VA FHA HUD compliance, North Idaho, Eastern Washington"
+                        content="outdoor movies, concessions, Phoenix, AZ, movie nights, event rentals"
                     />
-                    <meta property="og:title" content="Well Water Testing & System Inspections in North Idaho & Eastern WA" />
+                    <meta property="og:title" content="Outdoor Movies & Concessions in Phoenix | Outdoor Movie Pros" />
                     <meta
                         property="og:description"
-                        content="Certified well water testing, GPM flow rate testing, and system inspections. Serving North Idaho and Eastern Washington."
+                        content="Outdoor movies and concessions in Phoenix, AZ. Book your event today!"
                     />
-                    <meta name="author" content="Chinook Water Testing" />
-                    <meta property="og:image" content="https://movienightpros.com/chinookLogo.jpg" />
-                    <meta property="og:image:alt" content="Chinook Water Testing company logo" />
-                    <meta property="og:url" content="https://movienightpros.com/" />
+                    <meta name="author" content="Outdoor Movie Pros" />
+                    <meta property="og:image" content="https://outdoormoviepros.com/company-logo.webp" />
+                    <meta property="og:image:alt" content="Outdoor Movie Pros company logo" />
+                    <meta property="og:url" content="https://outdoormoviepros.com/" />
                     <meta property="og:type" content="website" />
                     <meta name="robots" content="index, follow" />
-                    <link rel="canonical" href="https://movienightpros.com/" />
+                    <link rel="canonical" href="https://outdoormoviepros.com/" />
                 </Helmet>
                 <NavBar />
                 <ScrollToTop />
                 <Routes>
-                 {/* Location-specific Pages */}
-                    <Route path="/scottsdale" element={<Locations />} />
-                    <Route path="/tempe" element={<Locations />} />
+                    {/* Location-specific Pages */}
+                    <Route path="/phoenix" element={<Locations />} />
                     <Route path="/mesa" element={<Locations />} />
+                    <Route path="/scottsdale" element={<Locations />} />
+                    <Route path="/gilbert" element={<Locations />} />
+                    <Route path="/chandler" element={<Locations />} />
+                    <Route path="/tempe" element={<Locations />} />
+                    <Route path="/paradise-valley" element={<Locations />} />
+                    <Route path="/glendale" element={<Locations />} />
+                    <Route path="/peoria" element={<Locations />} />
+                    <Route path="/queen-creek" element={<Locations />} />
+                    <Route path="/san-tan-valley" element={<Locations />} />
+                    <Route path="/tolleson" element={<Locations />} />
+                    <Route path="/buckeye" element={<Locations />} />
+                    <Route path="/goodyear" element={<Locations />} />
+                    <Route path="/anthem" element={<Locations />} />
 
                     {/* Hooking up for drawer links */}
                     <Route path="/locations" element={<Locations />} />
@@ -69,7 +81,7 @@ function App() {
                     <Route path="/faqs" element={<FAQs />} />
                     <Route path="/gallery" element={<Gallery />} />
                     <Route path="/contact" element={<Contact />} />
-                    <Route path="/ice-cream-truck" element={<IceCreamTruck />} />
+                    <Route path="/ice-cream-food-truck" element={<IceCreamTruck />} />
                     <Route path="/concessions-options" element={<ConcessionsOptions />} />
                     <Route path="/movie-nights-options" element={<MovieNightsOptions />} />
                     <Route path="/" element={<Home />} />

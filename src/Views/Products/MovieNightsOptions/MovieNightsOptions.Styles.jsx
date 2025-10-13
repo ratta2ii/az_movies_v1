@@ -88,14 +88,14 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: "600 !important",
         fontSize: '2em !important',
         marginBottom: '6px !important',
-        color: "white",
+        color: "#fff",
         [theme.breakpoints.down('xs')]: {
             fontSize: '2.3em !important',
 
         },
     },
     cardSubtitle: {
-        color: '#f9d3c5ff',
+        color: '#6a7280',
         fontSize: '1.2em !important',
         fontStyle: 'italic',
         fontWeight: 600,
@@ -105,18 +105,18 @@ const useStyles = makeStyles((theme) => ({
         paddingLeft: 16,
         marginTop: 15,
         fontSize: '1.2em',
-        color: 'white',
+        color: '#fff',
         [theme.breakpoints.down('xs')]: {
             paddingLeft: 8,
         },
     },
     cardPrice: {
-        color: "white",
+        color: "#fff",
         fontSize: '1.5em !important',
         marginTop: "30px !important",
     },
     quoteNote: {
-        color: "white !important",
+        color: "#fff !important",
         fontStyle: 'italic',
         marginTop: 20,
         fontSize: '0.9em',

@@ -4,20 +4,20 @@ import { Box, Typography } from '@mui/material';
 import styled from 'styled-components';
 
 // Image imports
-import GalleryImage1 from './../../Assets/Images/GalleryImages/gallery1.jpg';
-import GalleryImage2 from './../../Assets/Images/GalleryImages/gallery2.jpg';
-import GalleryImage3 from './../../Assets/Images/GalleryImages/gallery3.jpg';
-import GalleryImage4 from './../../Assets/Images/GalleryImages/gallery4.jpg';
-import GalleryImage5 from './../../Assets/Images/GalleryImages/gallery5.jpg';
-import GalleryImage6 from './../../Assets/Images/GalleryImages/gallery6.jpg';
-import GalleryImage7 from './../../Assets/Images/GalleryImages/gallery7.jpg';
-import GalleryImage8 from './../../Assets/Images/GalleryImages/gallery8.jpg';
-import GalleryImage9 from './../../Assets/Images/GalleryImages/gallery9.png';
-import GalleryImage10 from './../../Assets/Images/GalleryImages/gallery10.JPG';
-import GalleryImage11 from './../../Assets/Images/GalleryImages/gallery11.JPG';
-import GalleryImage12 from './../../Assets/Images/GalleryImages/gallery12.JPG';
-import GalleryImage13 from './../../Assets/Images/GalleryImages/gallery13.JPG';
-import GalleryImage14 from './../../Assets/Images/GalleryImages/gallery14.JPG';
+import GalleryImage1 from './../../Assets/Images/GalleryImages/gallery1.webp';
+import GalleryImage2 from './../../Assets/Images/GalleryImages/gallery2.webp';
+import GalleryImage3 from './../../Assets/Images/GalleryImages/gallery3.webp';
+import GalleryImage4 from './../../Assets/Images/GalleryImages/gallery4.webp';
+import GalleryImage5 from './../../Assets/Images/GalleryImages/gallery5.webp';
+import GalleryImage6 from './../../Assets/Images/GalleryImages/gallery6.webp';
+import GalleryImage7 from './../../Assets/Images/GalleryImages/gallery7.webp';
+import GalleryImage8 from './../../Assets/Images/GalleryImages/gallery8.webp';
+import GalleryImage9 from './../../Assets/Images/GalleryImages/gallery9.webp';
+import GalleryImage10 from './../../Assets/Images/GalleryImages/gallery10.webp';
+import GalleryImage11 from './../../Assets/Images/GalleryImages/gallery11.webp';
+import GalleryImage12 from './../../Assets/Images/GalleryImages/gallery12.webp';
+import GalleryImage13 from './../../Assets/Images/GalleryImages/gallery13.webp';
+import GalleryImage14 from './../../Assets/Images/GalleryImages/gallery14.webp';
 
 // Array of images with alt text
 const IMAGES = [
@@ -105,7 +105,7 @@ const GalleryTitle = styled(Typography)`
 const Gallery = () => {
   return (
     <GalleryContainer style={{marginTop:200, marginBottom: 100}}>
-      <GalleryTitle variant="h4" component="h2" style={{color: "white"}}>
+      <GalleryTitle variant="h4" component="h2" style={{color: "#fff"}}>
         Our Gallery
       </GalleryTitle>
       <GalleryGrid>

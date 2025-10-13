@@ -77,7 +77,7 @@ const useStyles = makeStyles((theme) => ({
         borderRadius: 0,
         '&:first-of-type': {
             background: 'linear-gradient(45deg, #1f4898, #1365b7)',
-            borderRight: '2px solid white',
+            borderRight: '2px solid #fff',
             // borderBottomLeftRadius: '8px',
             // borderTopLeftRadius: '8px',
         },

@@ -5,13 +5,13 @@ export default function Loader() {
     <div style={{
       height: '100vh',
       backgroundColor: '#0b0f18',
-      color: 'white',
+      color: '#fff',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
       fontSize: '1.2rem',
     }}>
-      <img src="/american_flag.png" alt="Chinook Water Testing Logo" style={{ width: '25%' }} />
+      <img src="/company-logo.webp" alt="Outdoor Movie Pros Logo" style={{ width: '25%' }} />
     </div>
   );
 }
